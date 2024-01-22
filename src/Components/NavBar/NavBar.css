@@ -14,12 +14,18 @@
 }
 .textoNav{
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 24px !important;
+    font-size: 22px !important;
+    color: white;
 }
 .navbar-brand{
     margin-right: 0%;
 }
 .paddingCarrito{
-    padding-left: 334px !important;
+    padding-left: 90px !important;
     
+}
+#dropdown-basic{
+background-color: #6B6B6B;
+border-color: #FBD416;
+font-size: 20px;
 }
