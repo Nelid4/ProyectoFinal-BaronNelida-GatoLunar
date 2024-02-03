@@ -6,6 +6,7 @@ import CardBooks from './Components/CardBooks/CardBooks'
 import NavBar from './Components/NavBar/NavBar'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import './App.css'
+import PersonajesApi from './Components/PersonajesApi/PersonajesApi'
 
 function App() {
 
@@ -13,12 +14,12 @@ function App() {
     <div>
       <NavBar />
       <ItemListContainer greeting='Para viajar lejos, no hay mejor nave que un libro. Bienvenid@s a Gato Lunar' />
-
+      <PersonajesApi/>
 {/* CONTADOR */}
-    <Contador />
+    {/* <Contador /> */}
 <br />
 {/* CARD CON LOS LIBROS */}
-      <CardBooks img='https://images.cdn1.buscalibre.com/fit-in/360x360/ff/9e/ff9ea4db43eb1ec258983f18c9a384bd.jpg' 
+      {/* <CardBooks img='https://images.cdn1.buscalibre.com/fit-in/360x360/ff/9e/ff9ea4db43eb1ec258983f18c9a384bd.jpg' 
       title='Un cuento perfecto' 
       genre='Romance' 
       price= {15000} />
@@ -30,8 +31,8 @@ function App() {
 
       <CardBooks img='https://images.cdn2.buscalibre.com/fit-in/360x360/52/fb/52fbe2c8719e8c0526a9dcd2d7e1b9ad.jpg' 
       title='Cadáver exquisito' 
-      genre='Suspenso' 
-      price={11000} />
+      genre='Thriller' 
+      price={11000} /> */}
 
     </div>
   )
