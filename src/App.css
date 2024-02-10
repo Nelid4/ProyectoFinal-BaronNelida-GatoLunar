@@ -5,3 +5,6 @@
   --bs-navbar-padding-y: 0px; 
   --bs-navbar-brand-padding-y: 0px !important
 }
+a.active{
+  color:#0D99FF
+}

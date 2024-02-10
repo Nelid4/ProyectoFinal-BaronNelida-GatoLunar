@@ -1,19 +1,23 @@
 import React from 'react'
-import Contador from './Components/Contador/Contador'
-import CardBooks from './Components/CardBooks/CardBooks'
 import NavBar from './Components/NavBar/NavBar'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import './App.css'
-import PersonajesApi from './Components/PersonajesApi/PersonajesApi'
 import{BrowserRouter, Routes, Route} from "react-router-dom"
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <NavBar />
       <Routes>
         <Route path="/" element= {<ItemListContainer/>}/>
+        <Route path='/condition/:condition' element={<ItemListContainer/>}/>
+        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
       </Routes>
+        <Footer />
+
     </BrowserRouter>
   );
 }

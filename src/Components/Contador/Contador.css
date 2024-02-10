@@ -1,0 +1,39 @@
+.contador-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sumar-restar {
+    display: flex;
+    gap: 10px;
+  }
+  .borderRadius{
+    border-radius: 7px !important;
+  }
+
+  .contador{
+    display: flex;
+    align-items: center;
+    padding-left:15px ;
+    padding-right:15px ;
+  }
+
+  .sumar-restar button {
+    background-color: #FA2966;
+    color: #FBD416;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 35px;
+  }
+  
+  .agregar-carrito button {
+    background-color: #FA2966;
+    color: #FBD416;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  

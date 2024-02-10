@@ -1,5 +1,5 @@
-.bg{
-    background-color: #6B6B6B;
+/* .bg{
+
 }
 .nav-link{
     padding-left: 80px !important;
@@ -23,9 +23,49 @@
 .paddingCarrito{
     padding-left: 70px !important;
     
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #6B6B6B;
+  }
+.carrito{
+    padding-left: 200px;
 }
-#dropdown-basic{
-background-color: #6B6B6B;
-border-color: #FBD416;
-font-size: 20px;
+.botonLibro{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px; 
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-style: solid;
+    border-radius: 6px ;
+    border-color: #FBD416;
 }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  nav a:hover {
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+  }
+  
+  img {
+    width: 140px; 
+  }
+  
+  

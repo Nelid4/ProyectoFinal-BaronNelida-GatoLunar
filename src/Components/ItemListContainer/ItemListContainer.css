@@ -1,6 +1,22 @@
-.saludo{
-    font-family: Math;
-    font-size: xx-large;
-    font-style: italic;
-    padding-top: 30px;
-}
+.libros-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly ;
+  }
+  
+  .cardBook {
+    width: 234px;
+    margin-bottom: 100px ;
+    margin-right: 70px;
+    margin-left: 70px;
+  }
+  
+  .card {
+    background-color: #e2e0e0;
+    border-radius: 36px;
+  }
+  
+  .botonInfo{
+    border-radius: 30px;
+  }
