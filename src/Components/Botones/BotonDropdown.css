@@ -1,6 +1,17 @@
-#dropdown-basic{
+#dropdown-basic, .dropDownMenu{
     background-color: #6B6B6B;
     border-color: #FBD416;
     font-size: 25px;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    width: 15rem;
+    }
+
+    .botonLibro2{
+        color: white;
+    }
+
+    .botonLibro2:hover, .dropDownMenu:hover, #dropdown-basic:hover, .dropdown-item:hover{
+        color: #FBD416;
+    background-color: #6B6B6B;
+
     }

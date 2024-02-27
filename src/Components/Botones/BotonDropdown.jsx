@@ -1,20 +1,20 @@
 import Dropdown from 'react-bootstrap/Dropdown';
-import React from 'react'
 import './BotonDropdown.css';
+import { NavLink } from 'react-router-dom';
 
 export const BotonDropdown = () => {
   return (
     <div><Dropdown>
-    <Dropdown.Toggle variant="success" id="dropdown-basic">
-    Géneros Literarios
-</Dropdown.Toggle>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Géneros Literarios
+      </Dropdown.Toggle>
 
-<Dropdown.Menu>
-<Dropdown.Item href="#Romance">Romance</Dropdown.Item>
-<Dropdown.Item href="#Thriller">Thriller</Dropdown.Item>
-<Dropdown.Item href="#Biografias">Biografias</Dropdown.Item>
-<Dropdown.Item href="#Fantasia">Fantasia</Dropdown.Item>
-</Dropdown.Menu>
-</Dropdown></div>
+      <Dropdown.Menu className='dropDownMenu'>
+        <Dropdown.Item ><NavLink to="/condition/Romance" className="botonLibro2">Romance</NavLink> </Dropdown.Item>
+        <Dropdown.Item > <NavLink to="/condition/Thriller" className="botonLibro2">Thriller</NavLink></Dropdown.Item>
+        <Dropdown.Item > <NavLink to="/condition/Biografia" className="botonLibro2">Biografías</NavLink></Dropdown.Item>
+        <Dropdown.Item > <NavLink to="/condition/Fantasia" className="botonLibro2">Fantasia</NavLink></Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown></div>
   )
 }

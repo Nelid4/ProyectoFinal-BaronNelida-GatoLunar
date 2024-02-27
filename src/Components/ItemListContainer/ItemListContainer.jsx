@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import './ItemListContainer.css';
 import Spinner from 'react-bootstrap/Spinner';
 import productosJson from "../productos.json";
@@ -7,20 +7,26 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function asyncMock(condition) {
+  
   return new Promise((resolve, reject) => {
-    setTimeout(()=> {
-      if(condition === undefined){
+    setTimeout(() => {
+      if (condition === undefined) {
         resolve(productosJson);
-      }else{
+      } else {
         const librosFiltrados = productosJson.filter((item) => {
-          return item.condition === condition
-        })
+          return (condition === "usado" || condition === "nuevo") 
+          ? item.condition === condition 
+          : item.genre === condition;
+        });
+        if (librosFiltrados.length === 0) {
+          reject("No hay elementos disponibles para esta categoría");
+        }
         resolve(librosFiltrados);
       }
-
     }, 2000);
   });
 }
+
 
 export default function ItemListContainer() {
 
@@ -30,6 +36,7 @@ const { condition } = useParams();
   const [loading, setLoading] = useState(true); 
 
   useEffect(() =>{async function fetchLibros() {
+    setLoading(true)
       try {
         const res = await asyncMock(condition);
         setLibros(res);
