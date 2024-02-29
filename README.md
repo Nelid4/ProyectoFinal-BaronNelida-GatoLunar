@@ -1,8 +1,25 @@
-# React + Vite
+# Gato Lunar
+## Mi ecommerce de Libros
+**Bienvenido/a a la tienda *Gato Lunar*** 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Descripción del proyecto
 
-Currently, two official plugins are available:
+Para amantes de la lectura, en esta plataforma en línea pueden descubrir y comprar libros nuevos y usados de una manera tan conveniente como accesible.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Características principales
+
+Cuenta con estanterias tan variadas que van desde **best-sellers** hasta **obras literarias clásicas**. Posee una **navegabilidad fluida**, en la que los usuarios pueden filtrar los libros, tanto por su condición (usado o nuevo) como por su género. Mediante la incorporacion de **firebase** como base de datos, los usuarios puden gestionar la autenticación de manera segura.
+
+### ¿Cómo instalar el proyecto?
+
+1. Debes clonar el repositorio.
+2. Haz un npm install en la consola.
+3. Por último, haz un npm run dev y dizfruta de la experiencia:D
+
+Aqui puedes encontrar el link al repo: [Gato-Lunar](https://github.com/Nelid4/ProyectoFinal-BaronNelida-GatoLunar.git)
+
+### IMPORTANTE ACLARAR
+
+El proyecto esta hecho con fines educativos. La experiencia es una mera recreacion de como se veria una real tienda de libros.
+
+Agradecimientos al profe y a los tutores por la mejor onda!

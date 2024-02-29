@@ -38,3 +38,13 @@ font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     padding-bottom: 1px;
     padding-left: 12px;
 }
+
+.terminarCompra{
+    background-color: #FA2966;
+    color: #FBD416;
+    border: none;
+    padding: 4px 82px;
+    border-radius: 5px;
+    font-size: 35px;
+    
+}

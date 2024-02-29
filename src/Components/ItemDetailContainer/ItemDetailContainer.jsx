@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import productosJson from "../productos.json";
 import Card from 'react-bootstrap/Card';
 import './ItemDetailContainer.css' ;
@@ -8,6 +8,14 @@ import Contador from '../Contador/Contador';
 function ItemDetailContainer() {
   const { id } = useParams();
   const [libro, setLibro] = useState(null);
+
+// para el contador
+const [cantidadAgregada, setCantidadAgregada] = useState(0)
+
+const handleOnAdd = (cantidad) =>{
+  setCantidadAgregada(cantidad)
+}
+
 
   useEffect(() => {
     const libroEncontrado = productosJson.find(item => {
@@ -34,7 +42,13 @@ function ItemDetailContainer() {
         <Card.Text>Precio: ${libro.price}</Card.Text>
         <Card.Text>Condición: {libro.condition}</Card.Text>
         <Card.Text>Stock disponible: {libro.stock}</Card.Text>
-        <Contador stock={libro.stock} />
+        
+      {/* para el contador */}
+        {cantidadAgregada > 0 ?(
+          <Link to='/cart' className='terminarCompra'>Terminar mi compra</Link>
+        ) : (
+          <Contador stock={libro.stock} onAdd={handleOnAdd} />
+        )}
       </Card.Body>
     </Card>
         </div>
