@@ -1,0 +1,47 @@
+.productoComprar{
+    border: 6px solid #0D99FF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin: 42px;
+    padding: 10px;
+}
+.amarillo{
+    background-color: #FBD416;
+}
+.rosa{
+    color:#FA2966 ;
+}
+.negro{
+    color: black;
+}
+
+
+  
+  @keyframes cambioColor {
+    0% {
+      color: #FA2966;
+    }
+    33% {
+      color: #0D99FF;
+    }
+    66% {
+      color: #FBD416;
+    }
+    100% {
+      color: #FA2966;
+    }
+  }
+
+h1 {
+    animation: cambioColor 4s infinite;
+}
+
+#gif{
+    size: 180px !important
+}
+
+.carritoVacio{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

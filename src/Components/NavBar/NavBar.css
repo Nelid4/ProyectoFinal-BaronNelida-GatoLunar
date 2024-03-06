@@ -1,29 +1,3 @@
-/* .bg{
-
-}
-.nav-link{
-    padding-left: 80px !important;
-} 
-.container, .container-lg, .container-md, .container-sm, .container-xl{
-    --bs-gutter-x: 1.5rem;
-    --bs-navbar-brand-margin-end: 300px;
-    max-width: 1398px !important; 
-}
-.navbar-nav{
-    align-items: center
-}
-.textoNav{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 22px !important;
-    color: white;
-}
-.navbar-brand{
-    margin-right: 0%;
-}
-.paddingCarrito{
-    padding-left: 70px !important;
-    
-} */
 
 header {
     display: flex;
@@ -64,7 +38,7 @@ header {
     color: rgb(233, 233, 233);
   }
   
-  img {
+  .imgNav {
     width: 140px; 
   }
   
