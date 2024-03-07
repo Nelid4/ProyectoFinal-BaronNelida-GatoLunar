@@ -1,0 +1,39 @@
+.celdaFormulario{
+    padding: 20px;
+    padding-left: 117px;
+    padding-right: 50px;
+    margin: 13px;
+    background-color: #f7f7f799;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.color1{
+    border: 5px solid #FA2966;
+}
+.color2{
+    border: 5px solid #FBD416;
+}
+.color3{
+    border: 5px solid #0D99FF;
+}
+
+.botonComprar{
+    margin: 20px;
+font-size: 23px;
+margin-bottom: 90px;
+}
+
+.bradius{
+    border-radius: 10px ;
+}
+.mar{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
