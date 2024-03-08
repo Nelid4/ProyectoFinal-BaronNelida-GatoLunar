@@ -1,12 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import Card from 'react-bootstrap/Card';
-import './ItemDetailContainer.css';
-import Contador from '../Contador/Contador';
+import ItemDetail from '../ItemDetail/ItemDetail'; 
 import { CartContext } from '../CartContext/CartContext'; 
 import { getFirestore, doc, getDoc } from 'firebase/firestore'; 
 import Spinner from 'react-bootstrap/Spinner';  
-
 
 function ItemDetailContainer() {
     const { id } = useParams();
@@ -47,26 +44,7 @@ function ItemDetailContainer() {
             {loading ? (
                 <Spinner animation="grow" />
             ) : libro ? (
-                <div className='detail'>
-                    <img className='imgDetail' src={libro.img} alt={libro.title} />
-                    <Card className='cardDetail' style={{ width: '33rem' }}>
-                        <Card.Body>
-                            <Card.Title className='titulo'>{libro.title}</Card.Title>
-                            <Card.Text className='center'>Autor: {libro.author}</Card.Text>
-                            <Card.Text>{libro.description}</Card.Text>
-                            <Card.Text>Género: {libro.genre}</Card.Text>
-                            <Card.Text>Precio: ${libro.price}</Card.Text>
-                            <Card.Text>Condición: {libro.condition}</Card.Text>
-                            <Card.Text>Stock disponible: {libro.stock}</Card.Text>
-                            {/* para el contador */}
-                            {cantidadAgregada > 0 ? (
-                                <Link to='/cart' className='terminarCompra'>Finalizar mi compra</Link>
-                            ) : (
-                                <Contador stock={libro.stock} onAdd={handleOnAdd} />
-                            )}
-                        </Card.Body>
-                    </Card>
-                </div>
+                <ItemDetail libro={libro} cantidadAgregada={cantidadAgregada} handleOnAdd={handleOnAdd} />
             ) : (
                 <p>No se encontró el libro</p>
             )}
@@ -75,4 +53,3 @@ function ItemDetailContainer() {
 }
 
 export default ItemDetailContainer;
-
